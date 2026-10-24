@@ -1,5 +1,26 @@
-# AWS VPC Peering Project — Screenshots
-## Project Screenshots
+# AWS VPC Peering Project
+
+## Project Overview
+This project demonstrates AWS VPC Peering between two Virtual Private Clouds (VPCs), including routing configuration and private connectivity testing between EC2 instances.
+
+## AWS Architecture
+
+- **VPC A:** `10.10.0.0/16`
+- **VPC B:** `10.20.0.0/16`
+- **Bastion Host:** Public subnet in VPC A
+- **App-A:** Private subnet in VPC A
+- **App-B:** Private subnet in VPC B
+- **VPC Peering:** Active
+
+## AWS Services Used
+
+- Amazon VPC
+- VPC Peering
+- Amazon EC2
+- Route Tables
+- Security Groups
+- SSH
+
 ## Project Screenshots
 
 ### 1. VPC A and VPC B
@@ -24,10 +45,10 @@
 ![Security Groups](04a_Security_Groups.jpeg)
 
 ### 8. EC2 Key Pair
-![EC2 Key Pair](04b_EC2_Key_Pair.jpeg)
+<!-- Confirm the exact filename in the repository before adding this image. -->
 
 ### 9. Bastion and App-A Instances
-![Bastion and App-A](05_Bastion_and_App_A_Instances.jpeg)
+![Bastion and App-A Instances](05_Bastion_and_App_A_Instances.jpeg)
 
 ### 10. App-B Instance
 ![App-B Instance](06_App_B_Instance.jpeg)
@@ -44,26 +65,21 @@
 ### 14. App-B to App-A Ping
 ![App-B to App-A Ping](10_App_B_to_App_A_Ping.jpeg)
 
-These screenshots document the AWS VPC Peering lab setup and connectivity tests.
+## Connectivity Results
+
+- Bastion to App-A: SSH connection successful.
+- App-A to App-B: SSH connection successful.
+- App-B to App-A: Ping successful.
+
+## Learning Outcomes
+
+- Created and configured AWS VPCs and subnets.
+- Configured route tables and VPC Peering.
+- Practiced EC2 access using SSH.
+- Tested private connectivity between instances.
 
 ## Security Note
 
 Never upload private `.pem` keys, AWS access keys, passwords, or other credentials.
 
-
-
-## Included
-- 01 — VPC A and VPC B
-- 02a — Subnets
-- 02b — Public route table
-- 02d — VPC B private route table
-- 03 — VPC peering active
-- 04a — Security groups
-- 05 — Bastion and App-A instances
-- 06 — App-B instance
-- 07 — Bastion SSH key generation
-- 08 — Bastion to App-A SSH successful
-- 09 — App-A to App-B SSH successful
-- 10 — App-B to App-A ping successful
-
-Security note: Never upload private `.pem` keys, AWS access keys, passwords, or other credentials.
+This project was completed as a hands-on AWS VPC Peering lab.
