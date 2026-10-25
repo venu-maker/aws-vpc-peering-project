@@ -1,4 +1,4 @@
-# AWS VPC Peering Project
+# AWS VPC Peering Project 
 
 ## Project Overview
 This project demonstrates VPC Peering between two AWS Virtual Private Clouds (VPCs), allowing private communication between EC2 instances in separate VPCs.
