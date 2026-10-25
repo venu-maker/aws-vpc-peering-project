@@ -67,7 +67,7 @@ This project demonstrates VPC Peering between two AWS Virtual Private Clouds (VP
 - Bastion to App-A: SSH connection successful.
 - App-A to App-B: SSH connection successful.
 - App-B to App-A: Ping successful.
-
+ 
 ## Learning Outcomes
 - Created and configured VPCs and subnets.
 - Configured route tables and VPC Peering.
